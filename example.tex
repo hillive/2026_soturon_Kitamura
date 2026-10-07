@@ -1,0 +1,109 @@
+% -----------
+% プリアンブル
+%---------------
+\documentclass[a4j,11pt,dvipdfmx]{ujreport}
+
+% 使用するPackage
+\usepackage{mylatex}
+\usepackage{thesis-teu}
+
+% 注意書き用
+\textblockcolour{yellow}
+\setlength{\TPHorizModule}{10mm}
+\setlength{\TPVertModule}{10mm}
+\TPMargin{.2\TPHorizModule}
+
+% ヘッダ・フッタの設定
+\pagestyle{plain}
+
+%% 【変更】 題目: longtitleの人はthesis-teu.sty の該当箇所も修正する。
+\title{CS学部卒論用 \LaTeX テンプレート 改}
+% \longtitle{CS学部卒論用}{\LaTeX テンプレート 改}
+
+%% 【変更】 氏名など
+% \idnum C0119777
+\idnum C0B23049
+% \idnum C0B20888
+\author{北村~~晴貴}
+\advisor{井上 亮文~~~准教授}    % 指導教員 (職位は任意)
+\date{2~0~2~7~年~1~月~1~8~日} % 提出日
+\nendo 2026
+\lab{井上} % 研究室名
+
+%% 学籍番号から専攻を判断する
+\schoolofcs
+
+%% 書き方ガイドの注釈の出力を切り替える。commentパッケージを利用している。
+%% 注釈が不要なら次の6行をすべてコメントアウトするか、このファイルの\input{comment-...}とbody以下のファイル中の　\begin{comment} - \end{comment}を消してください。
+% \includecomment{comment}    % (a) 注釈を出す
+% \excludecomment{comment}    % (b) 注釈を出さない
+% \includecomment{comment19}    % (a)のときに19年度注釈を出す
+% \excludecomment{comment19}    % (a)のときに19年度注釈を出さない
+% \includecomment{comment20}    % (a)のときに20年度注釈を出す
+% \excludecomment{comment20}    % (a)のときに20年度注釈を出さない
+
+%---------------
+% 本文
+%---------------
+\begin{document}
+
+
+% 外表紙コメント
+\input{comment-cover}
+
+% 外表紙
+\makecover
+
+
+% 内表紙コメント
+\input{comment-inner}
+
+% 内表紙
+\maketitle
+
+
+% 概要コメント
+\input{comment-abst}
+
+% 概要
+\jabst{
+\input{./body/0_abstract.tex}    % abstract.texを読み込む
+}
+\makejabstract
+
+% ページ設定
+\pagenumbering{roman}
+\setcounter{page}{1}
+\thispagestyle{plain}
+
+% 目次コメント
+\input{comment-toc}
+
+\tableofcontents    % 目次
+
+
+% 図目次コメント
+\input{comment-lof}
+
+\listoffigures      % 図目次
+
+
+% 表目次コメント
+\input{comment-lof}
+\listoftables       % 表目次
+%\listofprograms        % プログラム目次
+\pagenumbering{arabic}
+
+% 論文本文
+%   論文本文は章や節単位で,いくつかのファイルに分割したほうが編集しやすい。
+\input{./body/1_preface}     % 第1章
+\input{./body/2_related}     % 第2章
+\input{./body/3_approach}    % 第3章
+\input{./body/4_implement}   % 第4章
+\input{./body/5_assessment}  % 第5章
+\input{./body/6_conclusion}  % 第6章
+\input{./body/98_ack}         % 謝辞
+\input{./body/99_bibliography}% 参考文献
+
+%\input{appendix}   % 付録
+\end{document}
