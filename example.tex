@@ -6,6 +6,8 @@
 % 使用するPackage
 \usepackage{mylatex}
 \usepackage{thesis-teu}
+\usepackage{float}
+\usepackage{needspace}
 
 % 注意書き用
 \textblockcolour{yellow}
@@ -97,6 +99,9 @@
 
 % 論文本文
 %   論文本文は章や節単位で,いくつかのファイルに分割したほうが編集しやすい。
+
+% \input{appendix}   % 付録
+
 \input{./body/1_preface}     % 第1章
 \input{./body/2_related}     % 第2章
 \input{./body/3_approach}    % 第3章
@@ -105,5 +110,5 @@
 \input{./body/6_conclusion}  % 第6章
 \input{./body/98_ack}         % 謝辞
 \input{./body/99_bibliography}% 参考文献
-%\input{appendix}   % 付録
+% %\input{appendix}   % 付録
 \end{document}

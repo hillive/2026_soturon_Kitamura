@@ -1,33 +1,62 @@
-\chapter{ブレス攻撃時の表示方法}
+\chapter{提案手法}
 \label{sec:display}
+本研究では，VRゲームにおけるブレス攻撃時の視認性とゲーム体験に及ぼす影響を調査するため，4種類の表示条件を設定した．3種類はブレス攻撃エフェクトの表示方法を変更する条件であり，残りの1種類は攻撃対象となるオブジェクトの表示方法を変更する条件である．
+本章では各条件の表示方法を図に示し，それぞれの特徴について説明する．
 
-\section{表示方法の概要}
+\section{エフェクトの表示条件}
 
-本研究では，VRゲームにおけるブレス攻撃時の視認性とゲーム体験に及ぼす影響を調査するため，4種類の表示条件を設定した．3種類はブレス攻撃エフェクトの表示方法を変更する条件であり，残りの1種類は攻撃対象となるオブジェクトの表示方法を変更する条件である．これらを比較することで，表示方法の違いが視認性とゲーム体験に及ぼす影響を調査する．
+\subsection{通常表示条件}
 
-\section{各表示方法}
-
-以下に各表示方法の概要を\figref{fig:3}と共に示す．
-
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\linewidth]{fig/fire.png}
-  \caption{各表示条件の比較}
-  \label{fig:3}
+  \includegraphics[width=0.4\linewidth]{fig/tuujou.png}
+  \includegraphics[width=0.4\linewidth]{fig/tuujou2.png}
+  \caption{通常表示(左:Unityでの表示画面, 右:模式図)}
+  \label{tuujou}
 \end{figure}
 
-\begin{itemize}
-    \item 通常表示：
-    エフェクトを通常どおり表示する．ほかの表示方法と比較するための基準とする．
 
-    \item 半透明表示：
-    エフェクト全体を半透明にして表示する．エフェクト越しに攻撃対象を確認しやすくする．
+通常表示条件では，ブレス攻撃エフェクトを通常の不透明な状態で表示する．
+この条件を比較の基準とする．
 
-    \item 奥部透明表示：
-    エフェクトの奥側を透明にし，手前側は通常どおり表示する．エフェクトの一部のみ表示を変更することで，視認性とエフェクトの見た目の両立を図る．
 
-    \item 輪郭表示：
-    対象物の輪郭を表示し，エフェクトと重なった場合でも対象物の位置や形状を把握しやすくする．
-\end{itemize}
 
-これらの表示方法を比較することで，エフェクトによる遮蔽の軽減が視認性に及ぼす影響と，表示の変化がゲーム体験に及ぼす影響を調査する．
+\subsection{半透明表示条件}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\linewidth]{fig/hantoumei.png}
+  \includegraphics[width=0.4\linewidth]{fig/hantoumei2.png}
+  \caption{半透明表示(左:Unityでの表示画面, 右:模式図)}
+  \label{hantoumei}
+\end{figure}
+
+
+半透明条件では，ブレス攻撃エフェクト全体の透明度を変更し，エフェクト越しに対象物を視認できるようにする．
+
+\subsection{奥部透明表示条件}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\linewidth]{fig/oubu.png}
+  \includegraphics[width=0.4\linewidth]{fig/oubu2.png}
+  \caption{奥部透明表示(左:Unityでの表示画面, 右:模式図)}
+  \label{oubu}
+\end{figure}
+
+奥部透明表示では，ブレス攻撃エフェクトの後方部分を透明にすることで，対象物の視認性を確保する．
+
+
+\subsection{輪郭表示条件}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\linewidth]{fig/rinkaku.png}
+  \includegraphics[width=0.4\linewidth]{fig/rinkaku2.png}
+  \caption{輪郭表示(左:Unityでの表示画面, 右:模式図)}
+  \label{rinkaku}
+\end{figure}
+
+
+輪郭表示では，ブレス攻撃エフェクトの通常表示条件によって対象物が隠れた場合でも位置を把握できるように，対象物の輪郭を表示する．
+
