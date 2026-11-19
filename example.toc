@@ -15,10 +15,10 @@
 \contentsline {subsection}{\numberline {3.1.4}輪郭表示条件}{9}{subsection.23}%
 \contentsline {chapter}{\numberline {4}実装}{10}{chapter.26}%
 \contentsline {section}{\numberline {4.1}システム構成}{10}{section.27}%
-\contentsline {section}{\numberline {4.2}ブレス攻撃の実装}{11}{section.29}%
+\contentsline {section}{\numberline {4.2}ブレス攻撃の実装}{10}{section.29}%
 \contentsline {section}{\numberline {4.3}実験用オブジェクトの実装}{11}{section.30}%
 \contentsline {subsection}{\numberline {4.3.1}的オブジェクト}{11}{subsection.31}%
-\contentsline {subsection}{\numberline {4.3.2}ゴーストオブジェクト}{12}{subsection.33}%
+\contentsline {subsection}{\numberline {4.3.2}ゴーストオブジェクト}{11}{subsection.33}%
 \contentsline {chapter}{\numberline {5}実験と評価}{13}{chapter.36}%
 \contentsline {section}{\numberline {5.1}実験概要}{13}{section.37}%
 \contentsline {section}{\numberline {5.2}実験1：ターゲット追従タスク}{13}{section.38}%

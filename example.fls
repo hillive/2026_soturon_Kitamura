@@ -991,13 +991,14 @@ INPUT ./body/4_implement.tex
 INPUT ./body/4_implement.tex
 INPUT ./body/4_implement.tex
 INPUT ./body/4_implement.tex
-INPUT ./fig/placeholder.png
-INPUT ./fig/placeholder.png
-INPUT fig/placeholder.png
-INPUT extractbb -B cropbox -O fig/placeholder.png
-INPUT ./fig/placeholder.png
-INPUT ./fig/placeholder.png
-INPUT fig/placeholder.png
+INPUT ./fig/system.png
+INPUT ./fig/system.png
+INPUT fig/system.png
+INPUT extractbb -B cropbox -O fig/system.png
+INPUT ./fig/target2.png
+INPUT ./fig/target2.png
+INPUT fig/target2.png
+INPUT extractbb -B cropbox -O fig/target2.png
 INPUT ./fig/ghost.png
 INPUT ./fig/ghost.png
 INPUT fig/ghost.png
