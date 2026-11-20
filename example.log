@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2026.11.13)  19 NOV 2026 20:09
+This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2026.11.13)  20 NOV 2026 15:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -604,12 +604,12 @@ Package rerunfilecheck Info: File `example.out' has not changed.
 (rerunfilecheck)             Checksum: 793F6749161BF4FFB0C4A88BACBB6FF3;3728.
  ) 
 Here is how much of TeX's memory you used:
- 13543 strings out of 478733
- 207076 string characters out of 5860892
+ 13544 strings out of 478733
+ 207087 string characters out of 5860892
  524508 words of memory out of 5000000
- 31689 multiletter control sequences out of 15000+600000
+ 31690 multiletter control sequences out of 15000+600000
  514513 words of font info for 100 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 75i,12n,84p,785b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,12n,84p,723b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on example.dvi (23 pages, 55796 bytes).
+Output written on example.dvi (23 pages, 55608 bytes).
